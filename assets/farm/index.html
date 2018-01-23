@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app='farm'>
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=1200">
+
+    <title>StreamPub - Розыгрыши призов!</title>
+
+    <link rel="shortcut icon" href="/src/img/base/favicon.png">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="/src/js/vendor.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/templates.js"></script>
+
+    @@include('./core/includes/yandex.html')
+</head>
+<body ng-controller="appController">
+
+<!-- Start Wrap -->
+<div id="wrap">
+    <!-- include header -->
+    @@include('./modules/header/header.html')
+
+    <ng-view autoscroll="true"></ng-view>
+
+    <!-- include footer -->
+    @@include('./modules/footer/footer.html')
+</div>
+</body>
+</html>
